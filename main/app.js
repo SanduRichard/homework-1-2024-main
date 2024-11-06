@@ -1,4 +1,4 @@
-function decomprimare(a, result){
+function decompress(a, result){
     for (let i = 0; i < a.length; i++) {
         let number = parseInt(a[i + 1], 10); 
         let character = a[i]; 
@@ -39,7 +39,7 @@ const compress = (a, b = true) => {
     } 
     else {
         
-        return decomprimare(a, result);
+        return decompress(a, result);
     }       
 }
 
